@@ -27,8 +27,8 @@
 	<li><a href="#default" data-screen="screen_map.png"></a></li>
 	<li><a href="#content1" data-screen="screen_push.png">Share Location</a></li>
 	<li><a href="#content2" data-screen="screen_contacts.png">Find Friends</a></li>
-	<li><a href="#content3" data-screen="screen_calling.png">Make Connections</a></li>
-	<li><a href="#content4" data-screen="screen_call.png">Maintain Privacy</a></li>
+	<li><a href="#content3" data-screen="screen_call.png">Make Connections</a></li>
+	<li><a href="#content4" data-screen="screen_calling.png">Maintain Privacy</a></li>
 	<li><a href="#content5" data-screen="screen_map.png">Get Lumo</a></li>
       </ul>
     </div>  
@@ -37,7 +37,9 @@
       <div class="header">
 	<div class="header-inner">
 	  <div class="title" id="header">Lumo</div>
-	  <h3 id="default" class="subtitle">Location sharing made simple.</div>
+	  <div id="default" class="subtitle">Location sharing made simple.</div>
+	      <img src="badge_ios.png" />
+	      <img src="badge_android.png" />
 	</div>
       </div>
     </div>
@@ -83,11 +85,14 @@
 	  <div class="content-page">
 	    <h3 id="content5">Coming soon...</h3>
 	    <p>Premium experience on iPhone available today. </p>
-	    <p>Coming to the App Store, Android, Windows Phone, 
-	      and BlackBerry Messenger soon.</p>
+	    <p>Coming soon to the App Store, Android, Windows Phone, 
+	      and BlackBerry Messenger.</p>
 	    <p>
-	      <img src="badge_ios.png" />
-	      <img src="badge_android.png" />
+	      <form action="form.php" method="post">
+		<input type="text" name="email" value="Your email..." onclick="$(this).attr('value', '').attr('onclick', '')"/>
+		<input type="submit" value="Sign up for early access" />
+	      </form>
+
 	    </p>
 	  </div>
 	  
