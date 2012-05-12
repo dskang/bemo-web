@@ -8,102 +8,103 @@
     <meta name="author" content="kyri-boilerplate">
 
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Questrial:400+Merriweather:300" type="text/css" />
-    <link rel="stylesheet" href="bootstrap.min.css" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
 
-    <script type="text/javascript" src="jquery-1.7.2.min.js"></script>
-    <script type="text/javascript" src="bootstrap.min.js"></script>
-    <script type="text/javascript" src="bootstrap-scrollspy.js"></script>
-    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-scrollspy.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
 
     <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
   </head>
   <body data-spy="scroll" data-target=".subnav">
 
     <div class="subnav subnav-fixed">
       <ul class="nav nav-pills">
-    <li><a href="#default" data-screen="screen_map.png"></a></li>
-    <li><a href="#content1" data-screen="screen_push.png">Share Location</a></li>
-    <li><a href="#content2" data-screen="screen_contacts.png">Find Friends</a></li>
-    <li><a href="#content3" data-screen="screen_call.png">Make Connections</a></li>
-    <li><a href="#content4" data-screen="screen_calling.png">Maintain Privacy</a></li>
-    <li><a href="#content5" data-screen="screen_map.png">Get Lumo</a></li>
+        <li><a href="#default" data-screen="images/screen_map.png"></a></li>
+        <li><a href="#content1" data-screen="images/screen_push.png">Share Location</a></li>
+        <li><a href="#content2" data-screen="images/screen_contacts.png">Find Friends</a></li>
+        <li><a href="#content3" data-screen="images/screen_call.png">Make Connections</a></li>
+        <li><a href="#content4" data-screen="images/screen_calling.png">Maintain Privacy</a></li>
+        <li><a href="#content5" data-screen="images/screen_map.png">Get Lumo</a></li>
       </ul>
     </div>
 
     <div class="header-container">
       <div class="header">
-    <div class="header-inner">
-      <div class="title" id="header">Lumo</div>
-      <div id="default" class="subtitle">Location sharing made simple.</div>
-          <img src="badge_ios.png" />
-          <img src="badge_android.png" />
-    </div>
+        <div class="header-inner">
+          <div class="title" id="header">Lumo</div>
+          <div id="default" class="subtitle">Location sharing made simple.</div>
+          <img src="images/badge_ios.png" />
+          <img src="images/badge_android.png" />
+        </div>
       </div>
     </div>
 
     <div class="content-container">
       <div class="content">
-    <div class="content-inner">
+        <div class="content-inner">
 
-      <div class="content-page">
-        <h3 id="content1">Share location</h3>
-        <p>
-          Stop calling and texting people and trying to figure out where they are.
-        </p>
-        <p>
-          Lumo lets you request to share locations with a friend. Send them a Lumo call,
-          and you can follow each others' locations in realtime.
-        </p>
-      </div>
+          <div class="content-page">
+            <h3 id="content1">Share location</h3>
+            <p>
+              Stop calling and texting people and trying to figure out where they are.
+            </p>
+            <p>
+              Lumo lets you request to share locations with a friend. Send them a Lumo call,
+              and you can follow each others' locations in realtime.
+            </p>
+          </div>
 
-      <div class="content-page">
-        <h3 id="content2">Easy registration</h3>
-        <p>
-          Log in with Facebook and call any of your friends.
-          There's no need to make a new account.
-        </p>
-      </div>
+          <div class="content-page">
+            <h3 id="content2">Easy registration</h3>
+            <p>
+              Log in with Facebook and call any of your friends.
+              There's no need to make a new account.
+            </p>
+          </div>
 
-      <div class="content-page">
-        <h3 id="content3">Find friends</h3>
-        <p>
-          Don't waste your time texting or calling your friends for
-          their whereabouts ever again. Find them with a single tap.
-        </p>
-      </div>
+          <div class="content-page">
+            <h3 id="content3">Find friends</h3>
+            <p>
+              Don't waste your time texting or calling your friends for
+              their whereabouts ever again. Find them with a single tap.
+            </p>
+          </div>
 
-      <div class="content-page">
-        <h3 id="content4">Maintain privacy</h3>
-        <p>
-          Lumo always asks before sharing your location.
-          We keep your GPS off until it's absolutely necessary.
-        </p>
-      </div>
+          <div class="content-page">
+            <h3 id="content4">Maintain privacy</h3>
+            <p>
+              Lumo always asks before sharing your location.
+              We keep your GPS off until it's absolutely necessary.
+            </p>
+          </div>
 
-      <div class="content-page">
-        <h3 id="content5">Coming soon...</h3>
-        <p>Premium experience on iPhone available today. </p>
-        <p>Coming soon to the App Store, Android, Windows Phone,
-          and BlackBerry Messenger.</p>
-        <p>
-          <form action="form.php" method="post">
-        <input type="text" name="email" value="Your email..." onclick="$(this).attr('value', '').attr('onclick', '')"/>
-        <input type="submit" value="Sign up for early access" />
-          </form>
+          <div class="content-page">
+            <h3 id="content5">Coming soon...</h3>
+            <p>Premium experience on iPhone available today. </p>
+            <p>Coming soon to the App Store, Android, Windows Phone,
+              and BlackBerry Messenger.</p>
+            <p>
+              <form action="form.php" method="post">
+                <input type="text" name="email" value="Your email..." onclick="$(this).attr('value', '').attr('onclick', '')"/>
+                <input type="submit" value="Sign up for early access" />
+              </form>
 
-        </p>
-      </div>
+            </p>
+          </div>
 
-    </div>
+        </div>
       </div>
     </div>
 
     <div class="overlay">
       <div class="phone">
-    <div class="screen"></div><div class="glare"></div>
+        <div class="screen"></div>
+        <div class="glare"></div>
       </div>
     </div>
 
