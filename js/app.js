@@ -2,7 +2,6 @@ function screen(s) {
   $('.overlay .phone .screen')
     .fadeOut(300, function() {
       $(this).attr('style', 'background-image: url(' + s + ');');
-      console.log(this);
     });
 }
 
@@ -12,7 +11,7 @@ $(document).ready(
     screen(default_screen);
 
     $('[data-spy="scroll"]').each(function () {
-      var $spy = $(this).scrollspy('refresh')
+      var $spy = $(this).scrollspy()
     });
 
     $('.nav')
