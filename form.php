@@ -7,7 +7,7 @@ $error = "Sorry, we encountered an error saving your email. <br />Please try aga
 $success = "Thanks for signing up!";
 
 $fh = fopen("lumo_signups.txt", 'w') or die($err);
-fwrite($fh, $_POST['email']);
+fwrite($fh, $_POST['email'], 128); // 128 bytes is more than enough
 fwrite($fh, "\n");
 fclose($fh);
 echo($success);
