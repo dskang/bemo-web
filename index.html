@@ -7,7 +7,7 @@
     <meta name="description" content="Lumo is an app for sharing your location in real-time with friends.">
     <meta name="author" content="kyri-boilerplate">
 
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Questrial:400+Merriweather:300" type="text/css" />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Questrial:400" type="text/css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/styles.css" />
 
@@ -24,7 +24,6 @@
 
     <div class="subnav subnav-fixed">
       <ul class="nav nav-pills">
-        <li><a href="#default" data-screen="images/screen_map.png"></a></li>
         <li><a href="#content1" data-screen="images/screen_push.png">Share Location</a></li>
         <li><a href="#content2" data-screen="images/screen_contacts.png">Find Friends</a></li>
         <li><a href="#content3" data-screen="images/screen_call.png">Make Connections</a></li>
@@ -108,8 +107,14 @@
       </div>
     </div>
 
-    <div class="background"></div>
-
-
+    <div class="background">
+      <div class="preloader">
+	<img style="width:1px;height:1px;position:absolute;bottom:1px;right:1px;" src="images/screen_map.png" />
+	<img style="width:1px;height:1px;position:absolute;bottom:1px;right:1px;" src="images/screen_push.png" />
+	<img style="width:1px;height:1px;position:absolute;bottom:1px;right:1px;" src="images/screen_contacts.png" />
+	<img style="width:1px;height:1px;position:absolute;bottom:1px;right:1px;" src="images/screen_call.png" />
+	<img style="width:1px;height:1px;position:absolute;bottom:1px;right:1px;" src="images/screen_calling.png" />
+      </div>
+    </div>
   </body>
 </html>

@@ -1,11 +1,16 @@
+<style>html, body, div {width: 100%; height: 100%;}</style>
+<div style="font: 20px Helvetica Neue, Helvetica, Arial, sans-serif; text-align: center;">
+
 <?php
-$to = "raymondz@princeton.edu";
-$subject = "Lumo Sign-up";
-$email = $_REQUEST['email'] ;
-$headers = "From: $email";
-$sent = mail($to, $subject, $email, $headers) ;
-if($sent)
-{print "Your mail was sent successfully."; }
-else
-{print "Sorry, we encountered an error sending your mail."; }
+
+$error = "Sorry, we encountered an error saving your email. <br />Please try again later.";
+$success = "Thanks for signing up!";
+
+$fh = fopen("lumo_signups.txt", 'w') or die($err);
+fwrite($fh, $_POST['email']);
+fwrite($fh, "\n");
+fclose($fh);
+echo($success);
+
 ?>
+</div>
