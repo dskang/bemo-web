@@ -242,7 +242,7 @@ left: -6px;
   top: 0px; right: 5%;
   height: 804px;
   width: 470px;
-  background-image: url("../images/iphone_w.png")
+  background-image: url("/static/images/iphone_w.png")
   }
 
 .overlay .phone .glare
@@ -251,7 +251,7 @@ left: -6px;
   top: 38px; right: 50px;
   height: 429px;
   width: 153px;
-  background-image: url("../images/glare_screen.png");
+  background-image: url("/static/images/glare_screen.png");
   }
 
 .overlay .phone .screen
@@ -272,7 +272,7 @@ left: -6px;
   top: 0px;
   left: 0px;
 
-  background-image: url('../images/bg_1.jpg');
+  background-image: url('/static/images/bg_1.jpg');
   background-size: cover;
   z-index: -1;
  }

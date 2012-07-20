@@ -7,7 +7,7 @@ function screen(s) {
 
 $(document).ready(
   function() {
-    var default_screen = 'images/screen_push.png';
+    var default_screen = '/static/images/screen_push.png';
     screen(default_screen);
 
     $('[data-spy="scroll"]').each(function () {
