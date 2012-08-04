@@ -257,9 +257,9 @@ left: -6px;
 .overlay .phone .screen
 {
   position: absolute;
-  top: 60px;
+  top: 39px;
   left: 50px;
-  height: 535px;
+  height: 556px;
   width: 370px;
 
   background-size: cover;
