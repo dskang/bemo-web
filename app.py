@@ -1,9 +1,12 @@
 import os
 import datetime
 import urlparse
+import re
 
 from pymongo import Connection
 from flask import Flask, render_template, request
+
+EMAIL_REGEX = re.compile(r'[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}')
 
 app = Flask(__name__)
 
@@ -14,12 +17,15 @@ def hello():
 @app.route('/signup', methods=['POST'])
 def signup():
     email = request.form['email']
-    signup = {
-            'email': email,
-            'date': datetime.datetime.utcnow(),
-            }
-    database.signups.insert(signup)
-    return "Thanks! You'll hear from us soon."
+    if re.match(EMAIL_REGEX, email):
+        signup = {
+                'email': email,
+                'date': datetime.datetime.utcnow(),
+                }
+        database.signups.insert(signup)
+        return "Thanks! You'll hear from us soon."
+    else:
+        return "Err... we need a valid email address."
 
 def connect_to_db():
     """Connect to database"""
