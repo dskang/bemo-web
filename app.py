@@ -16,6 +16,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
+    app.logger.error(request.access_route)
     return render_template('index.html')
 
 @app.route('/signup', methods=['POST'])
