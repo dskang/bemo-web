@@ -16,7 +16,6 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    app.logger.error(request.access_route)
     return render_template('index.html')
 
 @app.route('/signup', methods=['POST'])
@@ -26,7 +25,7 @@ def signup():
     if email and re.match(EMAIL_REGEX, email):
         signup = {
                 'email': email,
-                'ip': request.remote_addr,
+                'ip': request.access_route[0],
                 'time': datetime.datetime.utcnow(),
                 }
         app.database.signups.insert(signup)
