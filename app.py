@@ -8,6 +8,8 @@ logging.basicConfig()
 from pymongo import Connection
 from flask import Flask, request, Response, render_template
 
+from access_control import crossdomain
+
 EMAIL_REGEX = re.compile(r'[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}')
 
 app = Flask(__name__)
@@ -17,6 +19,7 @@ def hello():
     return render_template('index.html')
 
 @app.route('/signup', methods=['POST'])
+@crossdomain(origin='*')
 def signup():
     email = request.form['email']
     if email and re.match(EMAIL_REGEX, email):
